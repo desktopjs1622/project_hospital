@@ -59,7 +59,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': ['django_settings_export.settings_export',],
-            'environment': 'opsu.jinja2.environment'
+            'environment': 'hospitalito.jinja2.environment'
         },
     },
     {
@@ -81,6 +81,11 @@ TEMPLATES = [
     },
 ]
 
+NOMBRE_APP = 'Hospital'
+
+SETTINGS_EXPORT = [
+    'NOMBRE_APP'
+]
 
 WSGI_APPLICATION = 'hospitalito.wsgi.application'
 
