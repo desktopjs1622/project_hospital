@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,23 @@
     <title>{% block title %} Hospital Municipal {% endblock title %}</title>
 </head> 
 <body>
+    {% block menu %}
+
+    Hola Mundo
+
+    {% endblock menu %}
+
+    {% block content %}
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Impedit, consequuntur iste sed enim ducimus consectetur officiis 
+    totam minima voluptatem in harum, quas odit deserunt, 
+    tempora sunt earum. Sit, minus iusto!</p>
+
+    {% endblock content %}
     
+    {% block footer %}
+    <h1>Pie de página</h1>
+    {% endblock footer %}
 </body>
 </html>
